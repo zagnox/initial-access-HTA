@@ -18,7 +18,7 @@ Instruction on gaining initial access using mshta.exe to execute HTA files
 ```
 The payload above will run benign programs such as notepad or calc. If the operator attempts to drop and execute a beacon, it will most likely get **snagged by Windows Defender or other AV solutions**.
 
-Although HTA attacks have been around for 5 years they are still a solid **STAGING** mechanism. In this technique I will explain the steps on how to use HTA files as simple stagers to load scripts from remote servers, patch/crash AMSI (Anti-Malware Scan Interfrace) to evade detection and then execute a web scripted delivery by Cobalt Strike to spawn a beacon.
+Although HTA attacks have been around for a while they are still a solid **STAGING** mechanism. In this technique I will explain the steps on how to use HTA files as simple stagers to load scripts from remote servers, patch/crash AMSI (Anti-Malware Scan Interfrace) to evade detection and then execute a web scripted delivery by Cobalt Strike to spawn a beacon.
 
 1. Operator delivers the HTA application via email
 2. Victim clicks on the application
