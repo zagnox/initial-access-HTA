@@ -115,6 +115,3 @@ Once you have a script that will patch AMSI it is time to weaponize the HTA payl
 ## 
 
 ![Patching amsi and executing beacon. AV evaded](https://github.com/user-attachments/assets/e66b2048-0a56-4bdc-ad4d-b434f880fb1f)
-
-
-![CS Beacon](https://github.com/user-attachments/assets/8a4c873c-2f2c-4fab-8a95-df037a8deac1)
